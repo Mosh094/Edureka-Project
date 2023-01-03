@@ -6,7 +6,6 @@ pipeline {
                 echo 'compiling..'
                                 git branch: 'main',
                                 url: "https://github.com/Mosh094/Edureka-Project.git"
-                                sh "mvn -Dmaven.test.failure.ignore=true clean verify"
                                 bat label: '', script: 'mvn compile'
             }
         }
