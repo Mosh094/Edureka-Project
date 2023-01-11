@@ -4,8 +4,6 @@ pipeline {
         stage('compile') {
                         steps {
                 echo 'compiling..'
-                                git branch: 'main',
-                                url: "https://github.com/Mosh094/Edureka-Project.git"
                                 bat label: '', script: 'mvn compile'
             }
         }
